@@ -34,7 +34,7 @@ const fakeCart = [
 
 function CreateOrder() {
   const navigation = useNavigation();
-
+  const isSubmitting = navigation.state !== "idle";
   const formErrors = useActionData();
   // const [withPriority, setWithPriority] = useState(false);
   const cart = fakeCart;
